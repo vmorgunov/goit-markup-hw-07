@@ -719,7 +719,26 @@ a {
 
 /* ! PORTFOLIO STYLE */
 
-.filter-btn {
+.portfolio {
+  padding: 94px 0;
+}
+
+.portfolio__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 50px 0;
+}
+
+.portfolio__item {
+  margin-right: 8px;
+}
+
+.portfolio__item:last-child {
+  margin-right: 0;
+}
+
+.portfolio__btn {
   padding: 6px 24px;
   font-family: inherit;
   font-weight: 500;
@@ -733,69 +752,52 @@ a {
   transition: background-color 250ms var(--timing-fn);
 }
 
-.filter-btn:hover,
-.filter-btn:focus {
+.portfolio__btn:hover,
+.portfolio__btn:focus {
   background-color: var(--acent-color);
   color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio {
-  padding: 94px 0;
-}
+/* FOTO GALLERY */
 
-.portfolio-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 0 50px 0;
-}
-
-.portfolio-item {
-  margin-right: 8px;
-}
-
-.portfolio-item:last-child {
-  margin-right: 0;
-}
-
-.gallery-list {
+.gallery__list {
   display: flex;
   flex-wrap: wrap;
   margin: -30px 0 0 -30px;
 }
 
-.gallery-item {
+.gallery__item {
   flex-basis: calc(100% / 3 - 30px);
   margin: 30px 0 0 30px;
   cursor: pointer;
 }
 
-.gallery-item:hover {
+.gallery__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.gallery-title {
+.gallery-container {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.gallery-container__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.gallery-text {
+.gallery-container__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-}
-
-.gallery-item-text-container {
-  padding: 20px 24px;
-  border: 1px solid #eeeeee;
-  border-top: none;
 }
 
 .thumb img {
@@ -819,13 +821,13 @@ a {
   background-color: var(--overlay-bg);
 }
 
-.overlay-text {
+.overlay__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
   color: var(--white-color);
 }
 
-.gallery-item:hover .overlay {
+.gallery__item:hover .overlay {
   transform: translateY(0);
 }
