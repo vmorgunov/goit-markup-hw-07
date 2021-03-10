@@ -1,14 +1,14 @@
 /* ! COMMON STYLE */
 
 :root {
-  --primary-text-color: #212121;
-  --secondary-text-color: #757575;
-  --acent-color: #2196f3;
-  --white-color: #ffffff;
-  --bg-color-team: #f5f4fa;
-  --bg-color-acent: #2f303a;
+  --primary-text-color: rgb(33, 33, 33);
+  --secondary-text-color: rgb(117, 117, 117);
+  --acent-color: rgb(33, 150, 243);
+  --white-color: rgb(255, 255, 255);
+  --bg-color-team: rgb(245, 244, 250);
+  --bg-color-acent: rgb(47, 48, 58);
   --contacts-color-footer: rgba(255, 255, 255, 0.6);
-  --social-link-color: #afb1b8;
+  --social-link-color: rgb(175, 177, 184);
   --work-desc-color: rgba(47, 48, 58, 0.8);
   --timing-fn: cubic-bezier(0.4, 0, 0.2, 1);
   --backdrop-bg: rgba(0, 0, 0, 0.2);
@@ -94,7 +94,7 @@ a {
   padding-right: 15px;
 }
 
-.page-header .container {
+.page-header__container {
   display: flex;
   align-items: center;
 }
@@ -197,7 +197,7 @@ a {
   background-color: var(--bg-color-acent);
 }
 
-.page-footer .container {
+.page-footer__container {
   display: flex;
   align-items: baseline;
 }
