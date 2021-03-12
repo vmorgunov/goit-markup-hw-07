@@ -385,13 +385,13 @@ a {
 }
 
 .team-set__name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
 }
 
 .team-set__post {
-  padding-top: 10px;
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.2;
