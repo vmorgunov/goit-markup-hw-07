@@ -15,7 +15,7 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="page-header">
@@ -62,7 +62,7 @@
     <main>
       <section class="hero">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero__btn btn" type="button" data-modal-open>
+        <button class="hero__btn" type="button" data-modal-open>
           Заказать услугу
         </button>
       </section>
@@ -129,27 +129,39 @@
 
       <section class="work">
         <div class="container">
-          <h2 class="work__title title">Чем мы занимаемся</h2>
+          <h2 class="work__title">Чем мы занимаемся</h2>
           <ul class="work__list">
             <li class="work__item">
-              <div class="thumb">
-                <img src="./images/img-1.jpg" alt="Десктопные приложения" />
+              <div class="work__thumb">
+                <img
+                  class="work__img"
+                  src="./images/img-1.jpg"
+                  alt="Десктопные приложения"
+                />
               </div>
               <div class="work-desc">
                 <p class="work-desc__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="work__item">
-              <div class="thumb">
-                <img src="./images/img-2.jpg" alt="Мобильные приложения" />
+              <div class="work__thumb">
+                <img
+                  class="work__img"
+                  src="./images/img-2.jpg"
+                  alt="Мобильные приложения"
+                />
               </div>
               <div class="work-desc">
                 <p class="work-desc__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="work__item">
-              <div class="thumb">
-                <img src="./images/img-3.jpg" alt="Дизайнерские решения" />
+              <div class="work__thumb">
+                <img
+                  class="work__img"
+                  src="./images/img-3.jpg"
+                  alt="Дизайнерские решения"
+                />
               </div>
               <div class="work-desc">
                 <p class="work-desc__text">Дизайнерские решения</p>
@@ -163,7 +175,7 @@
 
       <section class="team">
         <div class="container">
-          <h2 class="team__title title">Наша команда</h2>
+          <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
               <img
@@ -442,7 +454,7 @@
 
       <section class="partners">
         <div class="container">
-          <h2 class="partners__title title">Постоянные клиенты</h2>
+          <h2 class="partners__title">Постоянные клиенты</h2>
           <ul class="partners__list">
             <li class="partners__item">
               <a class="partners__link" href="">
@@ -591,7 +603,7 @@
         <!-- SUBSCRIBE PAGE -->
 
         <div class="subscribe">
-          <h3 class="subcribe__title">Подпишитесь на рассылку</h3>
+          <h3 class="subscribe__title">Подпишитесь на рассылку</h3>
           <form class="subscribe__form">
             <input
               type="email"
@@ -599,7 +611,7 @@
               class="subscribe__input"
               placeholder="E-mail"
             />
-            <button type="submit" class="subcribe__btn btn">
+            <button type="submit" class="subcribe__btn">
               Подписаться
               <svg class="subscribe__icon" width="24" height="24">
                 <use href="./images/sprite.svg#icon-send"></use>
@@ -685,7 +697,7 @@
               <a class="policy__link" href="#">Условия договора</a>
             </label>
           </div>
-          <button class="modal-form__btn btn" type="submit">Отправить</button>
+          <button class="modal-form__btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>
